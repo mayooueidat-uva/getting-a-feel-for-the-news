@@ -55,6 +55,8 @@ Both the sentiment analysis and the reliability scores attempt to quantify subje
 ### Rationale 
 To mitigate the effects of biases introduced by VADER, the study focuses only on articles posted in the last ten years in the United States. English would be used more consistently across limited time and space, so VADER would judge the words relatively similarly. Meanwhile, the biases introduced by Ad Fontes Media's panelists cannot be detected within the scope if this project: I do not know the names of the panelists, nor do I have enough information to quantify their bias. The hope is that the bias mitigation measures taken by Ad Fontes Media (i.e. their attempt to gather expertise across the political spectrum) is enough for the purposes of the project; future projects would utilise news reliability scores from several sources.
 ## Metadata
+### ERD 
+![entity relationship diagram](relational_diagram.jpg)
 ### Data
 | Table name | Description | CSV link|
 | ----------- | -------- | ---------|
