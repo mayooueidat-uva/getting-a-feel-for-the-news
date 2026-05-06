@@ -66,6 +66,15 @@ def analyse_relevant_data():
         plt.legend(labels=["y_pred","y_test"], loc="lower right")
         plt.show()
         logger.info("created graph") 
+
+        # making a png image of our graph. 
+        output_path = "reliability_sentiment.png"
+        plt.savefig(output_path)
+        print(f"Saved plot to {output_path}")
+        logger.info("saved graph") 
+    
+        # output path to our graph (it's a png image now) 
+        return output_path
         
     # error handling
     except Exception as e:
