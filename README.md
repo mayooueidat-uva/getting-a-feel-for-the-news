@@ -44,6 +44,7 @@ Comparative Analysis of VADER and Textblob<br>on Financial News Headlines | Acad
 Top 50 US News Websites: Double-digit YoY<br> declines at more than half despite the Iran<br>war | Web article | A March 2026 assessment of US website visits to different news sources<br>that was used as a guide to select what sources to use for the project. | [OneDrive link](https://myuva-my.sharepoint.com/:u:/g/personal/zvd6vz_virginia_edu/IQDZh3CFMhVRQbWeelxyxdgaAdOWDV1M64Vuktjd9w9hQbI?e=Wb7Xx1)
 ## Data Creation
 ### Provenance
+The data was collected from NewsAPI and from Ad Fontes Media, and new data was created using the VADER sentiment analyser. NewsAPI includes a wide array of news sources from around the world, and only an API key is needed to access the free tier, which allows for 100 API calls a day. Meanwhile, Ad Fontes Media's API and csvs were inaccessible except to those who paid an exorbitant fee for its services, so source bias and reliability data were collected completely manually, which greatly limited the scope of this project. 
 ### Data creation table 
 | File name | File description | Link | 
 | --------- | ---------------- | ---- | 
