@@ -6,7 +6,7 @@
 **Press Release:** [press_release](https://github.com/mayooueidat-uva/getting-a-feel-for-the-news/blob/main/press_release_materials/press_release.md)<br>
 **Data:** [OneDrive folder](https://myuva-my.sharepoint.com/:f:/g/personal/zvd6vz_virginia_edu/IgCEXq7vhIRDRrelKfISrCCNAZeC-BRrHreVrvoLOmanZvk?e=sJl54z)<br>
 **Pipeline:** [load_clean](https://github.com/mayooueidat-uva/getting-a-feel-for-the-news/blob/main/code_materials/load_clean.py) [transform_analysis](https://github.com/mayooueidat-uva/getting-a-feel-for-the-news/blob/main/code_materials/transform_analysis.py) [master_notebook](https://github.com/mayooueidat-uva/getting-a-feel-for-the-news/blob/main/code_materials/master_notebook.ipynb) <br> 
-**License:**<br>
+**License:** [LICENSE.md](https://github.com/mayooueidat-uva/getting-a-feel-for-the-news/blob/main/LICENSE.md)<br>
 *Note: This project builds upon [a project I did last semester](https://github.com/mayooueidat-uva/mayas-sensational-project/blob/main/README.md). The previous project focused on correlations between the evolution of communications technology and the sensationalisation of New York Times headlines; this project focuses correlates sentiment and word choice with media reliability across news sources. The domain is the same, but the project aims are different.*<br>
 ## Problem Definition 
 ### General problem and refined specific problem statement
