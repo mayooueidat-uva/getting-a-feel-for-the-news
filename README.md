@@ -2,7 +2,7 @@
 **Executive Summary**:<br> 
 **Name:** Maya Uwaydat<br>
 **NetID:** zvd6vz<br>
-**DOI:**10.5281/zenodo.20059812
+**DOI:** 10.5281/zenodo.20059812
 <br>
 **Press Release:** [press_release](https://github.com/mayooueidat-uva/getting-a-feel-for-the-news/blob/main/press_release_materials/press_release.md)<br>
 **Data:** [OneDrive folder](https://myuva-my.sharepoint.com/:f:/g/personal/zvd6vz_virginia_edu/IgCEXq7vhIRDRrelKfISrCCNAZeC-BRrHreVrvoLOmanZvk?e=sJl54z)<br>
