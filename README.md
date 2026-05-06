@@ -55,8 +55,8 @@ To mitigate the effects of biases introduced by VADER, the study focuses only on
 ### Data
 | Table name | Description | CSV link|
 | ----------- | -------- | ---------|
-SOURCE_IDENTIFICATION | Basic identification information of the sources available<br>on NewsAPI.<br>(MAYA YOU MIGHT WANT TO CHANGE THE NAME OF<br>THE TABLE IT'S MISLEADING) |
-SOURCE_AND_RELIABILITY | The Ad Fontes Media bias and reliability scores<br> for news sources used for this project, in addition to<br> their scores' distances from reliability/unreliability thresholds.
+SOURCE_IDENTIFICATION | Basic identification information of the sources available<br>on NewsAPI.<br>(MAYA YOU MIGHT WANT TO CHANGE THE NAME OF<br>THE TABLE IT'S MISLEADING) | 
+SOURCE_AND_RELIABILITY | The Ad Fontes Media bias and reliability scores<br> for news sources used for this project, in addition to<br> their scores' distances from reliability/unreliability thresholds.| https://myuva-my.sharepoint.com/:x:/g/personal/zvd6vz_virginia_edu/IQCHG-A1VCoGS6gBkhGl63WkARkGGm0DF165uSeYky7PYwE?e=id9K29
 NEWS_ARTICLES | Information about news articles used for the project; the titles<br>will be used for sentiment analysis.
 HEADLINES_SENTIMENTS | Sentiment analysis scores calculated for headlines,<br>as well as titles and source IDs.
 ### Data Dictionary 
