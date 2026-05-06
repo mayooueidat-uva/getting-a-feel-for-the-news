@@ -176,17 +176,17 @@ def load_relevant_data():
                     "title_sentiment": title_sentiment
                     })
 
-            # creating dataframes for both article details and for sentiments of headlines 
-            headline_sentiments_df = pd.DataFrame(headline_sentiments)  
-            news_articles_df = pd.DataFrame(news_articles)
+        # creating dataframes for both article details and for sentiments of headlines 
+        headline_sentiments_df = pd.DataFrame(headline_sentiments)  
+        news_articles_df = pd.DataFrame(news_articles)
 
-            # populating SQL table for news article details 
-            con.execute(f"INSERT INTO NEWS_ARTICLES_TEST_3 SELECT * FROM news_articles_df")
-            logger.info(f"populated SQL table for news articles with articles from {source}.") 
+        # populating SQL table for news article details 
+        con.execute(f"INSERT INTO NEWS_ARTICLES_TEST_3 SELECT * FROM news_articles_df")
+        logger.info(f"populated SQL table for news articles with articles from {source}.") 
 
-            # populating SQL tables for headline sentiments
-            con.execute(f"INSERT INTO HEADLINE_SENTIMENTS_TEST_3 SELECT * FROM headline_sentiments_df")
-            logger.info(f"populated SQL table for headline sentiments with headline sentiments from {source}.") 
+        # populating SQL tables for headline sentiments
+        con.execute(f"INSERT INTO HEADLINE_SENTIMENTS_TEST_3 SELECT * FROM headline_sentiments_df")
+        logger.info(f"populated SQL table for headline sentiments with headline sentiments from {source}.") 
         
         # creating dictionary of dataframes. i used these when conducting EDA 
         tables_dict = {"news_articles_df":news_articles_df, "source_names_and_ids_df":source_names_and_ids_df,
