@@ -27,8 +27,8 @@ def analyse_relevant_data():
         s.source_id,
         h.title_sentiment,
         s.source_reliability
-        FROM HEADLINE_SENTIMENTS_TEST_3 h 
-        JOIN SOURCE_AND_RELIABILITY_TEST_3 s
+        FROM HEADLINES_SENTIMENTS h 
+        JOIN SOURCE_AND_RELIABILITY s
         ON h.source_id = s.source_id
         ;""").df()
         logger.info("joined tables for analysis") 
