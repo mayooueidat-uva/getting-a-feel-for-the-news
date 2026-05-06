@@ -27,7 +27,7 @@ As users of the Internet, we are forced to tolerate a constant barrage of inform
 | Reliability (`reliability_score`) | The reliability score of an article or news source as calculated by<br> panelists at Ad Fontes Media   |
 | VADER score (`vader_score`)  | A score from 1 to -1 gauging the strength of emotions expressed<br> in a piece of text, as decided by the VADER sentiment analyser.<br> -1 means negative sentiment; 0 means neutral sentiment; 1 means<br>positive sentiment.  |
 ### Domain description
-The project lies within the domain of media analysis: __________. There is some intersection with psychology, as I read about cognitive bias in order to understand the limitations inherent to news quality aggregators' "bias" and "reliability" metrics.
+The project lies within the domain of media analysis, as I am critically assessing mass media and require *some* degree of media literacy to know what sources to defer to when consulting reliability scores. Additionally, machine learning is involved in both understanding the VADER sentiment analyser and consntructing the algorithm that would predict source reliability. There is some intersection with psychology, as I read about cognitive bias in order to understand the limitations inherent to news quality aggregators' "bias" and "reliability" metrics.
 ### Background reading 
 [Here's the complete OneDrive folder](https://myuva-my.sharepoint.com/:f:/g/personal/zvd6vz_virginia_edu/IgA7GOPZa3WcRpPfgXLy7Z3xAeqHziufxfjtSsA6S468IDA?e=xv40Sz)
 ### Reading summary table
