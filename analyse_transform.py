@@ -64,15 +64,17 @@ def analyse_relevant_data():
         plt.suptitle("Getting a feel for the news", y=0.999, fontsize=16)
         plt.title("Gauging whether sentiment strength can predict\nnews source reliability", fontsize=9)
         plt.legend(labels=["y_pred","y_test"], loc="lower right")
-        plt.show()
         logger.info("created graph") 
-
+        
         # making a png image of our graph. 
         output_path = "reliability_sentiment.png"
-        plt.savefig(output_path)
+        plt.savefig(output_path, format="png")
         print(f"Saved plot to {output_path}")
         logger.info("saved graph") 
-    
+
+        # 'showing' graph 
+        plt.show()
+
         # output path to our graph (it's a png image now) 
         return output_path
         
