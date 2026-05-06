@@ -40,7 +40,7 @@ def load_relevant_data():
     try: 
         # create SQL table for news articles and their headlines
         con.execute(f"""
-                    CREATE TABLE IF NOT EXISTS NEWS_ARTICLES_TEST_3(
+                    CREATE TABLE IF NOT EXISTS NEWS_ARTICLES(
                         source_id VARCHAR,
                         source_name VARCHAR,
                         article_title VARCHAR,
@@ -52,7 +52,7 @@ def load_relevant_data():
         
         # creating SQL table for each news source and reliability scores and bias scores
         con.execute(f"""
-                    CREATE TABLE IF NOT EXISTS SOURCE_AND_RELIABILITY_TEST_3(
+                    CREATE TABLE IF NOT EXISTS SOURCE_AND_RELIABILITY(
                     source_id VARCHAR, 
                     source_bias DOUBLE,
                     source_reliability DOUBLE, 
@@ -64,7 +64,7 @@ def load_relevant_data():
        
         # creating SQL table for the sentiments in article headlines
         con.execute(f"""
-                    CREATE TABLE IF NOT EXISTS HEADLINE_SENTIMENTS_TEST_3(
+                    CREATE TABLE IF NOT EXISTS HEADLINES_SENTIMENTS(
                     source_id VARCHAR, 
                     article_title VARCHAR, 
                     title_sentiment DOUBLE
@@ -74,7 +74,7 @@ def load_relevant_data():
 
         # creating SQL table for source identificatory details
         con.execute(f"""
-                    CREATE TABLE IF NOT EXISTS SOURCE_NAME_ID_TEST_3(
+                    CREATE TABLE IF NOT EXISTS SOURCE_IDENTIFICATION(
                     source_id VARCHAR, 
                     source_name VARCHAR, 
                     source_url VARCHAR
@@ -85,7 +85,7 @@ def load_relevant_data():
         # populating SQL table for source bias and reliability 
         source_bias_and_reliability = pd.read_csv("https://raw.githubusercontent.com/pollyannafx/datascience-sandbox/refs/heads/main/source-bias-reliability.csv")
         source_bias_and_reliability_df = pd.DataFrame(source_bias_and_reliability)
-        con.execute(f"INSERT INTO SOURCE_AND_RELIABILITY_TEST_3 SELECT * FROM source_bias_and_reliability_df")
+        con.execute(f"INSERT INTO SOURCE_AND_RELIABILITY SELECT * FROM source_bias_and_reliability_df")
         logger.info("populated SQL table for source bias and reliability.") 
         
         ############## articles we will be fetching from APIs ############
@@ -120,7 +120,7 @@ def load_relevant_data():
 
         # populating SQL table for news source identificatory information 
         source_names_and_ids_df = pd.DataFrame(source_names_and_ids)
-        con.execute(f"INSERT INTO SOURCE_NAME_ID_TEST_3 SELECT * FROM source_names_and_ids_df")
+        con.execute(f"INSERT INTO SOURCE_IDENTIFICATION SELECT * FROM source_names_and_ids_df")
         logger.info("populated SQL table for news sources' identificatory details.") 
     
                                    
@@ -181,11 +181,11 @@ def load_relevant_data():
         news_articles_df = pd.DataFrame(news_articles)
 
         # populating SQL table for news article details 
-        con.execute(f"INSERT INTO NEWS_ARTICLES_TEST_3 SELECT * FROM news_articles_df")
+        con.execute(f"INSERT INTO NEWS_ARTICLES SELECT * FROM news_articles_df")
         logger.info(f"populated SQL table for news articles with articles from {source}.") 
 
         # populating SQL tables for headline sentiments
-        con.execute(f"INSERT INTO HEADLINE_SENTIMENTS_TEST_3 SELECT * FROM headline_sentiments_df")
+        con.execute(f"INSERT INTO HEADLINES_SENTIMENTS SELECT * FROM headline_sentiments_df")
         logger.info(f"populated SQL table for headline sentiments with headline sentiments from {source}.") 
         
         # creating dictionary of dataframes. i used these when conducting EDA 
