@@ -179,7 +179,7 @@ def load_relevant_data():
         # creating dataframes for both article details and for sentiments of headlines 
         headline_sentiments_df = pd.DataFrame(headline_sentiments)  
         news_articles_df = pd.DataFrame(news_articles)
-
+        
         # populating SQL table for news article details 
         con.execute(f"INSERT INTO NEWS_ARTICLES SELECT * FROM news_articles_df")
         logger.info(f"populated SQL table for news articles with articles from {source}.") 
@@ -191,8 +191,14 @@ def load_relevant_data():
         # creating dictionary of dataframes. i used these when conducting EDA 
         tables_dict = {"news_articles_df":news_articles_df, "source_names_and_ids_df":source_names_and_ids_df,
                         "source_bias_and_reliability_df":source_bias_and_reliability_df, "headline_sentiments_df":headline_sentiments_df}
+                
+        # turning everything into a csv 
+        headline_sentiments_df.to_csv("./headlines_sentiments.csv")
+        news_articles_df.to_csv("./news_articles.csv")
+        source_names_and_ids_df.to_csv("./source_identification.csv")
+        logger.info("made csv files of all newly-generated dataframes.") 
+        
         return tables_dict
-
 
     # error handling 
     except Exception as e:
