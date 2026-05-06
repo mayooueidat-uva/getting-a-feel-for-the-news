@@ -44,8 +44,9 @@ Top 50 US News Websites: Double-digit YoY<br> declines at more than half despite
 ### Data creation table 
 | File name | File description | Link | 
 | --------- | ---------------- | ---- | 
-load_clean | Fetches all relevant data from NewsAPI. | placeholder | 
-transform_analyse | Conducts the sentiment analysis on the headlines;<br>produces the graph. | placeholder |
+load_clean.py | Fetches all relevant data from NewsAPI, conducts<br>sentiment analysis. | placeholder | 
+transform_analyse.py | Fits a polynomial regression model on sentiment data<br> to predict reliabiltiy. | placeholder |
+master_notebook.ipynb | Includes code from the previous two notebooks in addition to analysis rationale. | placeholder |
 ### Bias identification 
 Both the sentiment analysis and the reliability scores attempt to quantify subjective metrics, so they are obviously coloured by the assumptions carried by their creators. VADER is a lexicon-based model, so it searches for words that correspond with intentions and intensity values as defined by its internal dictionary ([source](https://science.utm.my/procscimath/wp-content/uploads/sites/605/2024/09/1-8-AHMAD-DANIEL-BIN-AZAHREE-A20SC0005.pdf)). Therefore, it is not accomodating for words whose meanings change across contexts, and also does not accomodate for new slang. Similarly, Ad Fontes attempted to make their media quality scores (bias and reliability) as "objective" as possible by employing reviewers from all ends of the political spectrum, even though panels' biases will inevitably slide into their decisions. Though one can confirm that a source is "reliable" by cross-checking with other sources or with established scientific or historical consensus, confirmation bias still affects perceived reliability of information ([source](https://edmo.eu/blog/cognitive-biases-in-news-making-and-fact-checking-a-mixed-methods-approach/)). Ad Fontes Media also did not specify what was meant by "right," "left," and "centrist," and the panelists' supposedly neutral decisions could be skewed in a direction that *I* might see as left-leaning or right-leaning.
 ### Rationale 
