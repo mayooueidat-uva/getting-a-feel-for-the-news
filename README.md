@@ -9,7 +9,7 @@
 **Pipeline:** [load_clean](https://github.com/mayooueidat-uva/getting-a-feel-for-the-news/blob/main/code_materials/load_clean.py) [transform_analysis](https://github.com/mayooueidat-uva/getting-a-feel-for-the-news/blob/main/code_materials/transform_analysis.py) [master_notebook](https://github.com/mayooueidat-uva/getting-a-feel-for-the-news/blob/main/code_materials/master_notebook.ipynb) <br> 
 **License:** [LICENSE.md](https://github.com/mayooueidat-uva/getting-a-feel-for-the-news/blob/main/LICENSE.md)<br>
 *Note: This project builds upon [a project I did last semester](https://github.com/mayooueidat-uva/mayas-sensational-project/blob/main/README.md). The previous project focused on correlations between the evolution of communications technology and the sensationalisation of New York Times headlines; this project focuses correlates sentiment and word choice with media reliability across news sources. The domain is the same, but the project aims are different.*<br>
-*LAST MINUTE ADDENDUM: make sure you are logged into your UVA account when accessing files
+*LAST MINUTE ADDENDUM: **make sure you are logged into your UVA account when accessing files**
 ## Problem Definition 
 ### General problem and refined specific problem statement
 - General problem statement: We want to easily detect poor-quality news just from reading the headline.
